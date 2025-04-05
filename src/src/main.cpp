@@ -69,7 +69,8 @@ void loop()
     if ((currentT - previousT) / 1000.0 >= Ts)
     {
         previousT = currentT;
-        IMU::SensorData data = imu.readData(DEBUG);
-
+        motor_1.setSpeed(10);
+        motor_2.setSpeed(10);
+        motor_3.setSpeed(10);
     }
 }
